@@ -1,0 +1,38 @@
+article{
+    background-color: whitesmoke;
+    border: 1px solid  #FA7A35;
+    margin-bottom: 2em;
+    padding: 1em;
+    box-shadow: 1px 2px 1px rgba(0,0,0,0.3);
+}
+
+article:hover{
+    
+    box-shadow: 1px 2px 12px rgba(0,0,0,0.3);
+}
+
+article .title a {
+    
+    color : #FA7A35;
+    text-decoration: none;
+    
+
+}
+
+
+article .title {
+    
+    margin-bottom: 0.5em;
+    
+
+}
+
+article .title a:hover{
+    text-decoration: underline;
+}
+
+article.content{
+    padding: 0.5em;
+
+}
+

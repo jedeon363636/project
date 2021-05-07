@@ -1,0 +1,39 @@
+
+{% extends 'blog/base.html' %}
+
+
+
+{% block title %}Blog{% endblock%}
+
+
+{% block body %}
+<h1>{{ posts|length }} posts</h1>
+
+
+
+ <ul>
+    {% for post in posts %}
+    <article>
+        <h2 class="title">
+          <a href="{% url 'blog:show' id=post.id %}">{{post.id}}-{{post.title|upper}}</a>
+        </h2>
+        
+         <!--problème affichage temps -->
+        <p class="time">
+          <time datetime="{{ post.created_at|date:'Y-m-d' }}">
+            posted{{ post.created_at|timesince }}
+
+          </time>
+        </p>
+       
+        
+        <p class="content">{{post.body}}</p>
+        
+    </article>
+    
+    {% endfor %}
+ </ul>
+
+
+{% endblock %}
+

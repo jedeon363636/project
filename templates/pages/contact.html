@@ -1,0 +1,52 @@
+{% extends 'layouts/base.html' %}
+
+
+{% block title%}Contact {% endblock %}
+
+{% block content %}
+
+
+
+<div class="container_contact">
+    <h1 class="title title-1">contact</h1>
+
+    <form class="form">
+        
+        <div class="form__group">
+            <input type="text" class="form__input" id="nom" placeholder="Nom">
+            <label for="" class="form__label">
+                Votre Nom
+
+            </label>
+        </div>
+        <div class="form__group">
+            <input type="text" class="form__input" id="nom" placeholder="Prenom">
+            <label for="" class="form__label">
+                Votre Prènom
+
+            </label>
+        </div>
+        <div class="form__group">
+            <input type="text" class="form__input" id="nom" placeholder="E-mail">
+            <label for="" class="form__label">
+                Votre Adresse e-mail
+
+            </label>
+        </div>
+        <div class="form__message">
+            <label for="" class="form__message-label">
+                Commentaires
+            </label>
+            <textarea name="" id="message" cols="30" rows="10" class="form__input message__input"></textarea>
+        </div>
+        <div class="submit">
+            <button class="submitBtn">Envoyer</button>
+        </div>
+
+
+   
+    </form>
+ 
+ </div>
+
+{% endblock%}
