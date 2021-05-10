@@ -26,6 +26,7 @@ urlpatterns = [
     path('', views.HomeView ,name='home'),
     path('about/', views.AboutView, name='about'),
     path('contact/', views.ContactView, name='contact'),
+    path('services/', views.ServicesView, name='services'),
     #lien vers blog url
     path('blog/', include('blog.urls')),
 
